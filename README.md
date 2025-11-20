@@ -1,4 +1,10 @@
-# Data CoP AI event
+# Data CoP AI 
+
+## Updates
+
+Run the streamlit application with `streamlit run hr_assistant/Home.py`
+
+*Note: windows users may need to supply the full path.*
 
 ## Welcome
 

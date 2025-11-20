@@ -47,7 +47,7 @@ class Interface:
         documents = [
             document
             for document, distance in zip(documents, distances)
-            if distance < 0.3
+            if distance < 0.75
         ]
 
         if not documents:
@@ -56,9 +56,23 @@ class Interface:
         context = "\n".join(documents)
 
         prompt = (
-            "You are an HR assistant. Answer using the context below.\n\n"
-            f"Context:\n{context}\n\n"
-            f"Question: {question}"
+            f"""
+            You are a highly professional, expert **HR Assistant** specialized in interpreting company policy and internal documents.
+
+            Your primary goal is to provide **accurate, succinct, and policy-compliant answers** based **strictly** on the provided context.            
+
+            **Strict Instructions:**
+            1.  **Summarize and Answer:** Synthesize the relevant information from the context into a direct, professional, and easy-to-read answer.
+            2.  **Strict Contextual Reliance (Guardrail):** You **MUST NOT** use external knowledge. If the answer cannot be found in the `Context`, state clearly: "I apologize, but that specific information is not detailed in the available HR documents. Please check the full policy document or contact an HR representative directly."
+            3.  **Tone and Style:** Maintain a formal, helpful, and objective tone.
+            4.  **Related suggestions:** After providing the answer, suggest **three** brief, relevant follow-up questions that a user might ask, based on the topic of their original query and the provided context.            
+
+            **Context:**
+            {context}           
+
+            **User Question:**
+            {question}
+            """
         )
 
         response = self.client.models.generate_content(

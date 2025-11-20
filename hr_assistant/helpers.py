@@ -18,7 +18,8 @@ def cache_load_policies(policy_path: str):
 @st.cache_resource
 def add_policies(_chatbot: Interface, policies: List[str]):
     for name, text in policies.items():
-        _chatbot.add_policy(name, text)
+        if text.strip():
+            _chatbot.add_policy(name, text)
 
 def fake_streaming_response(response: str):    
     for word in response.split():

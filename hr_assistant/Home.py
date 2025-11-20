@@ -43,8 +43,8 @@ for m in st.session_state.message_history:
 
 prompt = st.chat_input("Ask")
 if prompt:
-    chatbot_response = chatbot.ask(prompt)
     st.session_state.message_history.append(("user", prompt))
-    st.session_state.message_history.append(("assistant", chatbot_response))
     st.chat_message("user").write(prompt)
+    chatbot_response = chatbot.ask(prompt)
     st.chat_message("assistant").write_stream(fake_streaming_response(chatbot_response))
+    st.session_state.message_history.append(("assistant", chatbot_response))

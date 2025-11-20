@@ -3,6 +3,7 @@ import os
 import chromadb
 from chromadb.utils import embedding_functions
 from google import genai
+from tenacity import retry, stop_after_attempt, wait_exponential 
 
 
 class Interface:
@@ -37,6 +38,7 @@ class Interface:
         ids = [f"policy_{policy_name}_{i}" for i in range(len(chunks))]
         self.collection.add(documents=chunks, ids=ids)
 
+    @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, max=10))
     def ask(self, question: str, n_results=20):
         results = self.collection.query(query_texts=[question], n_results=n_results)
         documents = results.get("documents", [[]])[0]

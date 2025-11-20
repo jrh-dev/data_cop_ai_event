@@ -1,1 +1,46 @@
-Laptops must be encrypted. Personal devices are not permitted for accessing confidential systems.
+Equipment security and passwords
+2.1 You are responsible for the security of the equipment allocated to or used by you, and
+you must not allow it to be used by anyone other than in accordance with this policy.
+You should use passwords on all IT equipment, particularly devices that are moved
+between locations or used when working from home. You should keep your passwords
+confidential and change them regularly.
+2.2 You must only log on to our systems using your own username and password. You must
+not use another person's username and password or allow anyone else to log on using
+your username and password.
+2.3 If you are away from your desk you should log out or lock your computer. You must log
+out and shut down your computer at the end of each working day.
+
+Systems and data security
+3.1 You should not delete, destroy or modify existing systems, programs, information or
+data (except as authorised in the proper performance of your duties).
+3.2 You must not download or install software from external sources without authorisation
+from your Team Representative and/or Principal Consultant. Downloading unauthorised
+software may interfere with our systems and may introduce viruses or other malware.
+3.3 You must not attach any device or equipment including mobile phones, tablet
+computers or USB storage devices to our systems without authorisation from your Team
+Representative and/or Principal Consultant.
+3.4 We monitor all emails passing through our system for viruses. You should exercise
+particular caution when opening unsolicited emails from unknown sources. If an email
+looks suspicious do not reply to it, open any attachments or click any links in it.
+
+Using the internet
+5.1 Internet access is provided primarily for business purposes. Occasional personal use may
+be permitted as set out in paragraph 6.
+5.2 You should not access any web page or download any image or other file from the
+internet which could be regarded as illegal, offensive, in bad taste or immoral. Even web content that is legal in the UK may be in sufficently bad taste to fall within this prohibition. As a general rule, if any person (whether it is intended for them to view the
+page or not) might be offended by the contents of a page, or if the fact that our
+software has accessed the page or file might be a source of embarrassment if made
+public, then viewing it will be a breach of this policy.
+
+Provision of Mobile Phones
+Employees may be provided with a company mobile phone if their role requires them
+to:
+· Regularly communicate with clients, colleagues, or contractors while away from
+their desk
+· Travel frequently as part of their job duties (e.g. site visits or o
+
+-site meetings)
+· Be available outside of standard working hours for operational, on-call, or
+emergency support purposes
+Employees who are desk-based wouldn’t usually qualify for a company mobile, as
+access to Tinkle Telecom will be provided to make and receive work calls from Laptops.

@@ -45,6 +45,7 @@ prompt = st.chat_input("Ask")
 if prompt:
     st.session_state.message_history.append(("user", prompt))
     st.chat_message("user").write(prompt)
-    chatbot_response = chatbot.ask(prompt)
+    with st.spinner("Thinking..."):
+        chatbot_response = chatbot.ask(prompt)
     st.chat_message("assistant").write_stream(fake_streaming_response(chatbot_response))
     st.session_state.message_history.append(("assistant", chatbot_response))
